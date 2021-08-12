@@ -1,0 +1,9 @@
+.cta {
+  font-size: 1.5rem;
+  color: white;
+  background-color: orange;
+}
+
+.cta[disabled], .cta:disabled {
+  background-color: gray;
+}

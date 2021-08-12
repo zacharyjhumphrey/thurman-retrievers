@@ -1,0 +1,40 @@
+<section id="select-dog-section" class="d-flex justify-content-center my-4">
+  <div class="col-md-8">
+    <div class="choose-dog-section mb-4">
+      <app-view-dog-card
+        *ngFor="let dog of dogs; let i = index"
+        [dogInfo]="dog"
+        (click)="selectDog(i)"
+      ></app-view-dog-card>
+    </div>
+    <div class="dog-focus-section d-flex justify-content-between">
+      <div class="dog-info d-flex flex-column">
+        <h4>
+          {{ currentDog.name }} <span> | {{ currentDog.sex }}</span>
+        </h4>
+        <p>{{ currentDog.description }}</p>
+        <!-- TODO Align this button at the bottom of the section -->
+        <app-cta
+          buttonText="I Want {{ currentDog.sex === 'Male' ? 'Him' : 'Her' }}!"
+          dogName="{{ currentDog.name }}"
+          [isDisabled]="!currentDog.isAvailable"
+        ></app-cta>
+      </div>
+      <div class="view-dog position-relative">
+        <img
+          src="../../assets/img/paw-print.svg"
+          alt="Paw print"
+          class="dog-img-accent"
+        />
+        <img
+          src="../../assets/img/{{ currentDog.name }}_portrait.jpg"
+          alt="{{ currentDog.name }} portrait"
+        />
+        <img
+          src="../../assets/img/{{ currentDog.name }}_cradle.jpg"
+          alt="{{ currentDog.name }} in a cradle"
+        />
+      </div>
+    </div>
+  </div>
+</section>

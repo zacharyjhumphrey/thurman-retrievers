@@ -1,0 +1,11 @@
+<div
+  class="yuh py-2"
+  [ngClass]="{
+    'bg-secondary text-white': !dogInfo.isAvailable
+  }"
+>
+  <!-- TODO CHANGE ABOVE CLASS W BOOTSTRAP -->
+  <span class="select-dog text-center p-1 mr-3">{{ dogInfo.name }}</span>
+  <!-- TODO Animate underline to take up whole div when the user selects a dog -->
+  <div class="underline" [style.backgroundColor]="dogInfo.color.hex()"></div>
+</div>

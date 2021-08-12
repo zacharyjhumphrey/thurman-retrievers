@@ -1,0 +1,107 @@
+#welcome-section h1 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: url("../assets/img/placeholder-mel-picture-xl.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#welcome-section > div {
+  justify-content: space-evenly;
+}
+
+.welcome-message h2 {
+  font-size: 4.2rem;
+}
+
+/* PHOTO GALLERY */
+#images-h {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.img-col-1 {
+  flex: 67%;
+}
+
+.img-col-2 {
+  flex: 33%;
+}
+
+.img-col > img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* TODO Add padding to the two side by side columsn */
+.grow-img {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+.prevent-image-stretch {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.test {
+  width: 100px;
+  height: 20px;
+  background-color: red;
+}
+
+.img-col img {
+  padding: 2.5px;
+}
+
+.sub-col {
+  display: flex;
+}
+
+.sub-col img {
+  flex: 50%;
+}
+
+.sub-col img {
+  margin: 0;
+  width: 50%;
+}
+
+/* ABOUT US */
+#about-us-section {
+  background-image: url("../assets/img/about-us-bg.svg");
+  background-position: center;
+  height: 758px;
+  margin-top: -100px;
+  background-repeat: no-repeat;
+}
+
+#about-us-section img {
+  border-radius: 14px;
+}
+
+#about-us-section h2 {
+  position: relative;
+  z-index: 1;
+}
+
+#about-us-section h2::after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 65%;
+  bottom: -10%;
+  left: 3%;
+  background-color: white;
+  opacity: .75;
+  z-index: -1;
+}

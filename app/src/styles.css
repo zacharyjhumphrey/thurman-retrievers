@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-bg {
+  color: white;
+  background-color: orange;
+}
+
+.primary-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.secondary-font {
+  font-family: "Raleway", sans-serif;
+}
+
+.disabled-bg {
+  background-color: #727272;
+  color: #FAFAFA;
+}

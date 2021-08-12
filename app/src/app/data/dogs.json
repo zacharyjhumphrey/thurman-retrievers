@@ -1,0 +1,8 @@
+{
+  "name": "Thor",
+  "color": "#FF00FF",
+  "imgName": "thor-placeholder-m",
+  "description": ["Warning: Intense cuddler. This pup loves to snuggle up."],
+  "sex": "F",
+  "available": false
+}

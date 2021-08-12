@@ -1,0 +1,30 @@
+Have Trey setup an AWS account
+Get price quota for Squarespace, etc. = $151 not including domain name
+Have Trey create a Google analytics account
+Plan dog photo gallery
+Fix Dog type to actually work
+Figure out how I want to design select dog section on mobile
+Figure out how to build the app
+Compress the images
+Code up gallery
+Create mobile design
+Ask Trey to share the form with me
+Get access to Google Analytics
+Setup S3 Bucket
+Ask trey if he wants a footer
+Ask for puppies that already have homes
+Buy domain name on AWS
+Fix gallery stretching
+
+Code up footer
+Link user to Google Form based on the dog they are interested in
+Create slight underline animation for select dog section headers
+Srcset the images
+Meta tags
+Create welcome component so build likes me again
+Hook up Google Analytics
+
+Turn Mel opening photo to <picture> ?
+Have google "discover" the website (https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl)
+Create robots.txt
+Fix build warning

@@ -1,0 +1,11 @@
+.dog-img-accent {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-75%, -50%);
+  z-index: -1;
+}
+
+app-cta {
+  align-self: end;
+}
