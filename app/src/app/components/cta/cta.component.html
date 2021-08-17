@@ -1,7 +1,13 @@
 <a
-  href="https://docs.google.com/forms/d/e/1FAIpQLScFdKFcT7SXD4rpXk5wWDPaGZA8RZGg96TpGfKSmyHAl4nCUQ/viewform?usp=pp_url&entry.645927=__other_option__&entry.645927.other_option_response={{dogName}}"
+  href="{{link}}"
 >
-  <button class="cta btn px-3 py-2" [disabled]="isDisabled">
+  <button
+    class="cta btn"
+    [disabled]="isDisabled"
+    [ngClass]="{
+      'large-btn': large
+    }"
+  >
     {{ buttonText }}
   </button>
 </a>

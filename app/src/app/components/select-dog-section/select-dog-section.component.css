@@ -1,11 +1,22 @@
-.dog-img-accent {
+.dog-info {
+  margin-bottom: 34px;
+}
+
+.dog-info p {
+  width: 300px;
+}
+
+.paw-print {
+  display: none;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(-75%, -50%);
+  right: 0;
+  transform: translateY(-50%);
   z-index: -1;
 }
 
-app-cta {
-  align-self: end;
+@media screen and (max-width: 1118px) {
+  .paw-print {
+    display: block;
+  }
 }

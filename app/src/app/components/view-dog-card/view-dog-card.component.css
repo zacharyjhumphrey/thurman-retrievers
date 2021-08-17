@@ -1,9 +1,8 @@
-/* TODO FACTOR THIS OUT */
-.yuh {
+.dog-name {
+  width: calc(100%/5);
   position: relative;
   display: inline-block;
   text-align: center;
-  width: calc(100%/5);
   cursor: pointer;
 }
 

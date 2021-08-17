@@ -8,76 +8,78 @@ import { Dog, Sex } from '../../constants/Dog';
   styleUrls: ['./select-dog-section.component.css'],
 })
 export class SelectDogSectionComponent implements OnInit {
-  // TODO Add Gabby's descriptions
-  // TODO Fix saturation of colar colors
   readonly DOG_INFO: Dog[] = [
     {
       name: 'Bear',
       color: new Color('#7645d1'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['He’s his own person.'],
       sex: Sex.M,
       isAvailable: false,
     },
     {
       name: 'Buzz',
       color: new Color('#4547d1'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['He is probably (definitely) taking a nap right now.'],
       sex: Sex.M,
       isAvailable: true,
     },
     {
       name: 'Thor',
       color: new Color('#45bed1'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['Snuggle King.'],
       sex: Sex.M,
       isAvailable: false,
     },
     {
       name: 'Simba',
       color: new Color('#d18d45'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: [
+        'A LOT of fun. Enjoys playing with his siblings and sleeping in his water bowl.',
+      ],
       sex: Sex.M,
-      isAvailable: true,
+      isAvailable: false,
     },
     {
       name: 'Belle',
       color: new Color('#081a18'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['Future CEO.'],
       sex: Sex.F,
       isAvailable: true,
     },
     {
       name: 'Elsa',
       color: new Color('#47e65a'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['A queen, and she knows it.'],
       sex: Sex.F,
       isAvailable: true,
     },
     {
       name: 'Cinderella',
       color: new Color('#8f8f8f'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['A gentle soul with lots of love to give.'],
       sex: Sex.F,
-      isAvailable: true,
+      isAvailable: false,
     },
     {
       name: 'Ariel',
       color: new Color('#f07fd5'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: [
+        'She just wants to be held...and fed treats. Lots and lots of treats.',
+      ],
       sex: Sex.F,
       isAvailable: false,
     },
     {
       name: 'Moana',
       color: new Color('#d1be45'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['The prettiest girl at the party.'],
       sex: Sex.F,
       isAvailable: true,
     },
     {
       name: 'Ana',
       color: new Color('#d14545'),
-      description: ['Warning: Intense cuddler. This pup loves to snuggle up.'],
+      description: ['Small but mighty.'],
       sex: Sex.F,
       isAvailable: false,
     },

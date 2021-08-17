@@ -1,9 +1,15 @@
 .cta {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
+  padding: .5rem 1rem;
   background-color: orange;
 }
 
 .cta[disabled], .cta:disabled {
   background-color: gray;
+}
+
+.large-btn {
+  padding: .6rem 1.5rem;
+  font-size: 1.8rem;
 }

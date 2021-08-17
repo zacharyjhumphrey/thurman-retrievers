@@ -21,17 +21,22 @@
               align-items-start
               col
               p-0
+              mb-3
             "
           >
             <div class="welcome-message text-white">
-              <h2 (click)="isWelcomeSectionShown()">
+              <h2 class="mb-3" (click)="isWelcomeSectionShown()">
                 This is <br />
                 Mel.
               </h2>
-              <h5 class="secondary-font">Her puppies need a new home</h5>
+              <h5 class="secondary-font bg-dark py-2 px-3">
+                Her puppies need a new home
+              </h5>
             </div>
 
-            <app-cta></app-cta>
+            <img id="mobile-img" src="../assets/img/placeholder-mel-picture-s.png">
+
+            <app-cta [large]="true"></app-cta>
           </div>
         </div>
       </section>
@@ -67,7 +72,7 @@
         class="d-flex justify-content-center w-100"
       >
         <div class="col-md-8 d-flex align-items-center">
-          <div class="content mr-5">
+          <div class="content">
             <h2 class="secondary-font font-weight-bold d-inline-block mb-4">
               GET TO KNOW US
             </h2>
@@ -79,6 +84,7 @@
             </p>
           </div>
           <img
+            id="family-picture"
             alt="Thurman Family"
             src="../assets/img/thurman-family-placeholder-m.png"
           />

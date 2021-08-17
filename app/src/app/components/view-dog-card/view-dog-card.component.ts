@@ -10,13 +10,20 @@ const DEFAULT_DOG: Dog = {
   isAvailable: false,
 };
 
+// TODO Dog imagss at the bottom of the page need to flex width to 100% adn auto height
+// TODO Turn dog names into flex boxes
+// TODO Sections are being clipped when screen is too small
+// TODO Add picture of Mel
+// TODO Add Thurman picture
+// TODO Center family picture
+
 @Component({
   selector: 'app-view-dog-card',
   templateUrl: './view-dog-card.component.html',
   styleUrls: ['./view-dog-card.component.css'],
 })
 export class ViewDogCardComponent implements OnInit {
-  @Input() dogInfo: Dog = DEFAULT_DOG;
+  @Input() dogInfo = DEFAULT_DOG;
 
   constructor() {}
 

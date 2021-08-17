@@ -14,6 +14,26 @@
   justify-content: space-evenly;
 }
 
+#mobile-img {
+  display: none;
+  margin: 0 auto;
+}
+
+.welcome-message h5 {
+  position: relative;
+  left: .4rem;
+}
+
+.welcome-message h5::before {
+  content: "";
+  width: .4rem;
+  height: 100%;
+  position: absolute;
+  left: -.2rem;
+  top: 0;
+  background-color: orange;
+}
+
 .welcome-message h2 {
   font-size: 4.2rem;
 }
@@ -22,7 +42,8 @@
 #images-h {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  margin: 14px 0;
+  padding: 0;
 }
 
 .img-col-1 {
@@ -33,17 +54,71 @@
   flex: 33%;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 930px) {
+  .img-col-1 {
+    flex: 100%;
+  }
+
+  .img-col-2 {
+    flex: 100%;
+  }
+
+  #about-us-section > div {
+    align-content: center !important;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  #about-us-section .content {
+    flex: 100% !important;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  #family-picture {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #welcome-section {
+    background-image: none;
+    background-color: rgb(52, 58, 64);
+  }
+
+  #welcome-section h1 {
+    text-align: center;
+  }
+
+  #mobile-img {
+    display: block;
+    height: 200px;
+  }
+
+  .welcome-content {
+    justify-content: space-evenly !important;
+    align-items: center !important;
+  }
+}
+
+
 .img-col > img {
   vertical-align: middle;
   width: 100%;
 }
 
-/* TODO Add padding to the two side by side columsn */
+/* TODO Add padding to the two side by side columns */
 .grow-img {
   display: inline-block;
   overflow: hidden;
   position: relative;
   flex: 1;
+  margin-left: 2.5px;
 }
 
 .prevent-image-stretch {
@@ -61,6 +136,7 @@
 
 .img-col img {
   padding: 2.5px;
+  /* margin: 2.5px; */
 }
 
 .sub-col {
@@ -104,4 +180,8 @@
   background-color: white;
   opacity: .75;
   z-index: -1;
+}
+
+#about-us-section .content {
+  margin-right: 2rem;
 }

@@ -7,25 +7,20 @@
         (click)="selectDog(i)"
       ></app-view-dog-card>
     </div>
-    <div class="dog-focus-section d-flex justify-content-between">
-      <div class="dog-info d-flex flex-column">
+    <div class="dog-focus-section d-flex flex-wrap justify-content-between">
+      <div class="dog-info">
         <h4>
           {{ currentDog.name }} <span> | {{ currentDog.sex }}</span>
         </h4>
         <p>{{ currentDog.description }}</p>
-        <!-- TODO Align this button at the bottom of the section -->
         <app-cta
           buttonText="I Want {{ currentDog.sex === 'Male' ? 'Him' : 'Her' }}!"
           dogName="{{ currentDog.name }}"
           [isDisabled]="!currentDog.isAvailable"
         ></app-cta>
       </div>
+      <img src="../../../assets/img/paw-print.svg" alt="Paw print" class="paw-print">
       <div class="view-dog position-relative">
-        <img
-          src="../../assets/img/paw-print.svg"
-          alt="Paw print"
-          class="dog-img-accent"
-        />
         <img
           src="../../assets/img/{{ currentDog.name }}_portrait.jpg"
           alt="{{ currentDog.name }} portrait"
