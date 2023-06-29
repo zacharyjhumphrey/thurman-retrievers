@@ -10,78 +10,39 @@ import { Dog, Sex } from '../../constants/Dog';
 export class SelectDogSectionComponent implements OnInit {
   readonly DOG_INFO: Dog[] = [
     {
-      name: 'Bear',
-      color: new Color('#7645d1'),
-      description: ['He’s his own person.'],
-      sex: Sex.M,
-      isAvailable: false,
-    },
-    {
-      name: 'Buzz',
-      color: new Color('#4547d1'),
-      description: ['He is probably (definitely) taking a nap right now.'],
-      sex: Sex.M,
-      isAvailable: true,
-    },
-    {
-      name: 'Thor',
-      color: new Color('#45bed1'),
-      description: ['Snuggle King.'],
-      sex: Sex.M,
-      isAvailable: false,
-    },
-    {
-      name: 'Simba',
-      color: new Color('#d18d45'),
-      description: [
-        'A LOT of fun. Enjoys playing with his siblings and sleeping in his water bowl.',
-      ],
-      sex: Sex.M,
-      isAvailable: false,
-    },
-    {
-      name: 'Belle',
-      color: new Color('#081a18'),
-      description: ['Future CEO.'],
+      name: 'Dolly',
+      color: new Color('pink'),
+      description: ['The princess of the bunch, this beautiful girl has never met someone she doesn’t like. Super playful and smart.'],
       sex: Sex.F,
       isAvailable: true,
     },
     {
-      name: 'Elsa',
-      color: new Color('#47e65a'),
-      description: ['A queen, and she knows it.'],
-      sex: Sex.F,
+      name: 'Willie',
+      color: new Color('yellow'),
+      description: ['Big Willie! Loves to eat and nap. The biggest (and most cuddly) of the litter.'],
+      sex: Sex.M,
       isAvailable: true,
     },
     {
-      name: 'Cinderella',
-      color: new Color('#8f8f8f'),
-      description: ['A gentle soul with lots of love to give.'],
-      sex: Sex.F,
-      isAvailable: false,
-    },
-    {
-      name: 'Ariel',
-      color: new Color('#f07fd5'),
-      description: [
-        'She just wants to be held...and fed treats. Lots and lots of treats.',
-      ],
-      sex: Sex.F,
-      isAvailable: false,
-    },
-    {
-      name: 'Moana',
-      color: new Color('#d1be45'),
-      description: ['The prettiest girl at the party.'],
-      sex: Sex.F,
+      name: 'Waylon',
+      color: new Color('green'),
+      description: ['Waylon loves people and always wants to be where the action is taking place. Loves using shoes as a pillow.'],
+      sex: Sex.M,
       isAvailable: true,
     },
     {
-      name: 'Ana',
-      color: new Color('#d14545'),
-      description: ['Small but mighty.'],
-      sex: Sex.F,
-      isAvailable: false,
+      name: 'Merle',
+      color: new Color('grey'),
+      description: ['He can be a little shy, but once Merle gets comfortable he wants to be your best friend! A calm temperament and a red coat.'],
+      sex: Sex.M,
+      isAvailable: true,
+    },
+    {
+      name: 'Hank',
+      color: new Color('brown'),
+      description: ['What Hank, the runt of the litter, lacks in size he makes up for in personality and cuteness. A people-pleaser with loads of charisma and a wavy coat.'],
+      sex: Sex.M,
+      isAvailable: true,
     },
   ];
 
@@ -97,6 +58,14 @@ export class SelectDogSectionComponent implements OnInit {
 
   selectDog(i: number): void {
     this.currentDog = this.dogs[i];
+  }
+
+  public getCTAText() {
+    if (!this.currentDog.isAvailable) {
+      return `No Longer Available` 
+    }
+
+    return `I Want ${ this.currentDog.sex === 'Male' ? 'Him' : 'Her' }!`
   }
 
   private sortDogsByAvailability(allDogs: Dog[]): Dog[] {

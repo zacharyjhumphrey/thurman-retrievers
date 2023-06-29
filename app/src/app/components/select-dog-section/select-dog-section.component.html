@@ -14,7 +14,7 @@
         </h4>
         <p>{{ currentDog.description }}</p>
         <app-cta
-          buttonText="I Want {{ currentDog.sex === 'Male' ? 'Him' : 'Her' }}!"
+          [buttonText]="getCTAText()"
           dogName="{{ currentDog.name }}"
           [isDisabled]="!currentDog.isAvailable"
         ></app-cta>
